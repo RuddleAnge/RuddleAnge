@@ -1,0 +1,44 @@
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+3 + 63,21,51,40,89,96,64,85,16,4,84,15,5,57,53,94,1,41,33,89,60,92,93,61,59,1,51,18,90,57,17,50,83,8,48,72,46,75,66,27,7,11,4,99,47,39,5,77,49,92,63,49,94,94,55,5,99,17,29,21,34,63,84,10,99,12,91,80,22,99,14,77,49,30,24,47,74,15,10
+
+function addNumbers(a, b) { return a + b; }
+96,67,38,93,90,67,91,52,9,10,57,4,79,30,31,48,85,91,24,50,94,92,61 / 88
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+false * apple
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+39 + 72
+const getRandomElement = array => array[getRandomIndex(array)];
+83 * 36,48,97,2,22,33,44,99,87,57,87,61,52,10,7,98,16,27,32,26,12,87,42,67,76,78,91,19,73,67,14,73,37,25,58,5,25,45,26,45,31,98,10,3,69,34,22,91,17,61,56,95,79,60,42,97,55,99,88,94,17,94,49,72,88,69,93,84,67,43,45,2,4,25,39,72,93,64,16,46,76,2,45,43
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+78 - true
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+apple
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const reverseString = str => str.split("").reverse().join("");
+62 / 11
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+6 * apple
+const isEven = num => num % 2 === 0;
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+true - banana
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+97 * 64
+const findSmallestNumber = numbers => Math.min(...numbers);
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+85,58,63,13,86,62,72,91,18,88,79,72,92,5,32,86,1,83,4,73,19,3,8,53,21,73,14,47,10,40,99,40,97,92,39,74,84,79,75,41,78,1,90,89,51,57,48,58,54,55,22,88,48,50 - kiwi
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+banana - 10,0,84,47,50,34,10,42,56,22,54,66,84,57,98,36,21,72,50,82,95,11,84,1,41,72,33,85,98,37,70,70,48,90,22,49,42,52,71,76,30,11,41,18,77,44,42,36,93,15,8,89,1
+const greet = name => `Hello, ${name}!`;
